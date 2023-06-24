@@ -1,0 +1,27 @@
+So we use HelperConfig to test on different blockchain by deploying on it
+we use fork-url for testing on different blockchains
+As we know that anvil chain (mockchain) doesn't have the chainlink pricefeed
+We can use mockpricefeed for that and deploy on local chain instead of call API everytime to Alchemy which takes time
+Deploying on local (Anvil) is fast than Alchemy for testing
+--mt is hpw we run a single test (forge test -m <name of the function>)
+Constant and Immutable variables are part of the contracts bytecode itself, its like pointer pointing to its value and doesn't use storage
+Function variables exist only for the duration of the function, they dont stay inside the contract, they are not permanent and are added/stored in their own memory data structure which gets deleted after function has executed
+Strings need the keyword 'memory', they are dynamically sized array so we need to tell solidity where we will store strings in memory or storage 
+Arrays and mappings can take up lot more space therefore where to store it is required by solidity
+object is contract in pure bytecode
+opcodes are the bytecode converted to something called opcodes, these are actually low level computer assembly instructions that are actually executing & actually doing what our smartcontract should do 
+if we load/read from memory gas cost: 3, if we load/read from storage gast cost: 100
+Foundry-DevOps keeps track of the most recently deployed version of contract
+Whenever we install packages we have to --no-commit at the end
+
+
+
+
+
+
+
+
+
+
+
+
